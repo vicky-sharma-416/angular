@@ -1,0 +1,5 @@
+<div>
+	<h2>Login</h2>
+	Email: <input type="email" name="email" placeholder="Login by email" [(ngModel)]="model.email" #email="ngModel" required /> <br><br>
+	<button [hidden]="isEmail" [disabled]="!email.valid" (click)="displayData(model)">Submit</button> 
+</div>

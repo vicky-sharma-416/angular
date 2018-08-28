@@ -13,84 +13,16 @@ tr:nth-child(even){
 	background-color: #dddddd
 }
 </style>
-<!-- Example to include module and show dynamic data -->
-<!--
-<table>
-  <tr>
-    <th *ngFor="let c of columns">{{c}}</th>
-  </tr>
-  <tr *ngFor="let ch of characters | async" 
-      app-table-row 
-      [character]="ch" 
-      [columns]="columns">
-  </tr>
-</table>
--->
 
 <table>
-	<tr *ngFor="let char of characters | async">
-		<td *ngFor="let col of columns">
+	<tr>
+		<th *ngFor="let col of columns">
 			{{col}}
+		</th>
+	</tr>
+	<tr *ngFor="let object of characters | async">
+		<td *ngFor="let col of users">
+			{{object[col]}}
 		</td>
 	</tr>
 </table>
-
-
-<!--
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Age</th>
-		<th>Gender</th>
-	</tr>
-	<tr *ngFor="let user of users">
-		<td>{{user.name}}</td>
-		<td>{{user.age}}</td>
-		<td>{{user.gender}}</td>
-	</tr>
-</table>
--->
-
-<!--<tr *ngFor="#user of users" *ngModel="user[column]">-->
-	
-<!--
-<style>
-table{
-	font-family: arial, sans-serif;
-	border-collapse: collapse;
-	width: 50%;
-}
-td, th{
-	border: 1px solid #dddddd;
-	text-align: left;
-	padding: 8px;
-}
-tr:nth-child(even){
-	background-color: #dddddd
-}
-</style>
-<table>
-	<tr>
-		<th>Name</th>
-		<th>Age</th>
-		<th>Gender</th>
-	</tr>
-	<tr>
-	<td>Alfreds Futterkiste</td>
-	<td>26</td>
-	<td>Male</td>
-  </tr>
-  <tr>
-	<td>Centro Moctezuma</td>
-	<td>32</td>
-	<td>Female</td>
-  </tr>
-  <tr>
-	<td>Centro Mouma</td>
-	<td>36</td>
-	<td>Male</td>
-  </tr>
-</table>
--->
-
-

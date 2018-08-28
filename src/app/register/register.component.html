@@ -1,0 +1,22 @@
+<div>
+	<h2>Register</h2>
+	<form name="form" (ngSubmit)="register()" #f="ngForm" novalidate>
+		First Name: <input type="text" name="name" placeholder="Put your first name" [(ngModel)]="model.name" 
+			#name="ngModel" required /> <br><br>
+		Last Name: <input type="text" name="lastname" placeholder="Put your last name" [(ngModel)]="model.lastname" 
+			#lastname="ngModel" required /> <br><br>
+		Email: <input type="email" name="email" placeholder="Please fill up your email" [(ngModel)]="model.email" 
+			#email="ngModel" required /> <br><br>
+		Phone: <input type="tel" id="phone" name="phone" placeholder="0123456789" pattern="[0-9]{10}" [(ngModel)]="model.phone" 
+			#phone="ngModel" maxlength="10" required /> <br><br>
+		<label>Gender:</label> <br>
+			Male <input type="radio" name="gender" value="male" [(ngModel)]="model.gender" #gender="ngModel" />
+			Female <input type="radio" name="gender" value="female" [(ngModel)]="model.gender" #gender="ngModel" /> <br><br>
+		<button [hidden]="isHidden" [disabled]="!f.valid">Submit</button> 
+	</form>
+</div>
+
+
+
+
+<!-- <button [routerLink]="['/table']" (click)="hidePage()" [hidden]="isHidden">Submit</button> -->
