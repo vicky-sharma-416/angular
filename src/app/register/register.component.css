@@ -1,0 +1,23 @@
+#set{
+color:#224668;
+margin-top: 30px;
+box-shadow: 6px 6px 6px 6px #888888;
+height: 435px;
+border-radius: 3px;
+
+}
+p{
+
+font-size: 20px;
+font-weight: bold;text-align: center;
+margin-top: 20px;
+text-decoration: underline;	
+}
+#rdo{
+margin-left: 150px;
+}
+.lnk{
+	font-size: 16px;
+	font-weight: bolder;
+	text-decoration: underline;
+}
