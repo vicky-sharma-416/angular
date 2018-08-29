@@ -21,6 +21,8 @@ export class RegisterComponent implements OnInit {
 
 	constructor( private registerService: TableService, private router: Router){}
 
+	ngOnInit() {}
+  
 	register(){
 		
 		this.user = this.registerService.createUsers(this.model)
@@ -39,7 +41,10 @@ export class RegisterComponent implements OnInit {
 			
 	}
 	
-	ngOnInit() {
-	}
-  
+	clearFields() {
+		this.model = {}
+    }
+    
+
 }
+
