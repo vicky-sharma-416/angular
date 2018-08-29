@@ -1,0 +1,18 @@
+#set{
+color:#224668;
+margin-top: 30px;
+box-shadow: 6px 6px 6px 6px #888888;
+height: 200px;
+border-radius: 3px;
+
+}
+p{
+
+font-size: 20px;
+font-weight: bold;text-align: center;
+margin-top: 20px;
+text-decoration: underline;	
+}
+#lgn{
+	margin-left:150px;
+}
