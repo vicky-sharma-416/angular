@@ -36,5 +36,8 @@ export class LoginComponent implements OnInit {
 				// Alert error message whenever error produces
 				alert(error.error.message)
 			})
-	}
+	}	
+
 }
+
+
